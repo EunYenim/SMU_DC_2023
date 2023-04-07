@@ -1,0 +1,63 @@
+
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+  body{
+  margin: 0;
+}
+.section{
+background-color: ;
+}
+.container{
+  --anyname:24px;
+  margin-inline:auto;
+  padding-inline: var(--anyname);
+  max-width: calc(1200px + 2*var(--anyname));
+background-color: ;
+}
+.wrapper{
+padding-block: 64px;
+background-color: ;
+}
+/*.wrapper h2,
+.wrapper p{
+text-align: center;
+}*/
+.button{
+  font-size: 18px;
+  background-color: slateblue;
+  color: white;
+  padding: 8px 16px;
+  text-transform: capitalize;
+  font-weight: 700;
+  text-align: center;
+  width: fit-content;
+  border-radius: 8px;
+}
+.flex{
+  display: flex;
+  width: 60%;
+  margin-inline: auto;
+  justify-content: center; /*세로에서 어떻게 정렬 할 것인가*/
+  align-items: center;
+  
+}
+.flex h2{
+  margin-bottom: 24px;
+}
+.flex--dir-colunm{
+  flex-direction: column;
+}
+.flex p{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.video{
+  width: 100%;
+  aspect-ratio:16/9 ;/*가로에 맞춰 세로의 길이를 자동으로*/
+  background-color: aquamarine;
+}
+.flex .button{
+  margin-bottom: 36px;
+}
