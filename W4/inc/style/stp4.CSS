@@ -1,0 +1,16 @@
+.grandchild{
+  background-color: rgb(217, 234, 250);padding: 4px;
+}
+.child{
+  padding: 8px;
+  background-color: rgb(226, 255, 228);
+}
+.parent{
+  background-color: rgb(255, 240, 240);
+  padding: 16px;
+  margin: 16px;
+  max-width: 960px;
+}
+.friend{
+  background-color: rgb(251, 227, 245);
+}
