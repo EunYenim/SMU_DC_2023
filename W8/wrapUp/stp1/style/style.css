@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 12px;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #49454f;
+  border: 1px solid #797472;
+  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500px;
+  line-height: 20px;
+  border-radius: 8px;
+  transition: backgrund color;
+}
+.button:hover {
+  background-color: #f0e9f1;
+}

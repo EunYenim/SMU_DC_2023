@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+}
+
+html {
+  background-color: #0c0c07;
+}
+
+.container {
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-rows: 0.3fr 2fr 0.3fr;
+  height: 100dvh;
+}
+
+#section2 {
+  width: 150dvh;
+}
+
+.section {
+  margin: 0;
+  width: 150dvh;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+  margin-block: auto;
+  position: center;
+}
+
+@media screen and (max-width: 1800px) {
+  .section {
+    width: 100dvh;
+  }
+}
+#main__media {
+  max-width: 75rem;
+  aspect-ratio: 16/9;
+}
+
+.img {
+  background-image: url("img/broken ship.png");
+  background-size: contain;
+  background-position: center;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+  margin-block: auto;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1800px) {
+  #main__media {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #main__media {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 800px) {
+  #main__media {
+    width: 30%;
+  }
+}
+#title {
+  color: white;
+  font-family: Pirata One;
+  font-size: 8.25rem;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+  padding-inline: auto;
+  display: flex;
+  margin-top: 1.25rem;
+}
+
+@media screen and (max-width: 1200px) {
+  #title {
+    font-size: 5rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  #title {
+    font-size: 3.75rem;
+  }
+}
+#text-container {
+  max-width: 100dvh;
+  height: auto;
+  margin-inline: auto;
+  margin-block: auto;
+  position: center;
+  padding-bottom: 0.625rem;
+}
+
+#main__media {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+#main__media.show {
+  opacity: 1;
+}
+
+.notice {
+  color: white;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+  padding-inline: auto;
+  display: flex;
+  padding-top: 2.8125rem;
+}
+
+#notice {
+  visibility: visible;
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+#notice {
+  opacity: 1;
+  font-family: Nanum Myeongjo;
+  font-size: 1.5625rem;
+}
+
+@media screen and (max-width: 1200px) {
+  #notice {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  #notice {
+    font-size: 1.125rem;
+  }
+}
+#backgroundSound {
+  display: none;
+}
