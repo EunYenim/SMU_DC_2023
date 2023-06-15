@@ -52,7 +52,7 @@ let nav1 = document.getElementById("nav1");
 nav1.onclick = () => {
   setTimeout(() => {
     // 3초 후에 다른 페이지로 이동
-    window.location.href = "http://127.0.0.1:5500/W15/FinalProject/FinalProject.html";
+    window.location.href = "http://127.0.0.1:5500/W15/FinalProject/FinalProject01/FinalProject.html";
   }, 2000); // 3초 (3000밀리초) 설정
 };
 
