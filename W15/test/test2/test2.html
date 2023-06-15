@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: relative;
+        top: 0;
+        transition: top 0.5s;
+      }
+
+      .button {
+        background-color: blue;
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <button
+      class="button"
+      onclick="startAnimation()"
+      onmouseover="changeColor()"
+    >
+      시작하기
+    </button>
+
+    <script>
+      function startAnimation() {
+        const box = document.querySelector(".box");
+        box.style.top = "-100px";
+      }
+
+      function changeColor() {
+        const button = document.querySelector(".button");
+        button.style.backgroundColor = "green";
+      }
+    </script>
+  </body>
+</html>

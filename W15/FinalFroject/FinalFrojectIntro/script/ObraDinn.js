@@ -1,23 +1,18 @@
 // 5초 후에 다음 페이지로 이동하는 함수
 function goToNextPage() {
-  window.location.href = "http://127.0.0.1:5500/W15/FinalFroject/FinalFroject.html";
+  window.location.href = "http://127.0.0.1:5500/W15/FinalFroject/FinalProject.html";
 }
 
 // 5초 후에 goToNextPage() 함수를 실행
 //setTimeout(goToNextPage, 10000); // 5초 (5000ms) 설정
-
-
-  setTimeout(function() {
-    var backgroundMusic = document.getElementById("backgroundSound");
-    backgroundMusic.play();
-  }, 3000);
-
-
-
-window.addEventListener('DOMContentLoaded', function() {
-var backgroundMusic = document.getElementById('backgroundSound');
-backgroundMusic.volume = 0.2;
-});
+var backgroundMusic = document.getElementById("backgroundSound");
+backgroundMusic.addEventListener("loadeddata", () => {console.log("loaded"); setTimeout(()=>{
+  backgroundMusic.muted = false;
+  backgroundMusic.volume = 0.8;
+  backgroundMusic.loop = true;
+  backgroundMusic.play();
+  console.log("B");
+},3000);});
 
 
 let textContainer = document.getElementById('text-container');
@@ -52,11 +47,7 @@ window.addEventListener('load', function() {
 });
 
 document.addEventListener('click', function() {
-  window.location.href = 'http://127.0.0.1:5500/W15/FinalFroject/FinalFroject.html';
+  window.location.href = 'http://127.0.0.1:5500/W15/FinalFroject/FinalProject.html';
 });
-
-
-
-
 
 

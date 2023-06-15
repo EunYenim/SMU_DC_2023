@@ -1,0 +1,44 @@
+#textWrapper {
+  overflow: hidden;
+  position: relative;
+  height: 50px; /* 텍스트의 높이에 맞게 조정하세요 */
+}
+
+#textWrapper2 {
+  overflow: hidden;
+  position: relative;
+  height: 50px; /* 텍스트의 높이에 맞게 조정하세요 */
+}
+
+.firstText {
+  position: absolute;
+  opacity: 0;
+  animation: slide-up 1.5s ease-in-out forwards;
+  animation-delay: 1s;
+}
+
+.secondText{
+  visibility: visible;
+  position: absolute;
+  opacity: 0;
+  animation: slide-up 1.5s ease-in-out forwards;
+  animation-delay: 1.5s; /* 3초 딜레이 */
+}
+
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0; /* 텍스트가 보이지 않도록 설정 */
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1; /* 텍스트가 서서히 보이도록 설정 */
+  }
+  
+}
+
+
