@@ -1,17 +1,16 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
-.container{
+.container {
+  max-width: 960px;
   margin-inline: auto;
-  max-width: 60rem;
-  padding-inline: 2rem;
-  padding-block: 4rem;
-  /* background-color: aqua; */
+  padding-inline: 32px;
+  padding-block: 64px;
 }
-.blank .container{
+
+.blank .container {
   min-height: 100dvh;
 }

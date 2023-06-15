@@ -1,0 +1,14 @@
+const indicator = document.querySelector(".progressBar .indicator");
+const main = document.querySelector("main");
+
+
+
+
+document.onscroll = () => {
+  const mainBCR = main.getBoundingClientRect();
+
+  const progress = (1 - mainBCR.bottom / mainBCR.height) * 100;
+
+  const right = 100 - progress;
+  if (right <= 100 && right >= 0) indicator.style.right = right + "%";
+};
