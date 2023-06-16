@@ -1,6 +1,6 @@
 // 5초 후에 다음 페이지로 이동하는 함수
 function goToNextPage() {
-  window.location.href = "http://127.0.0.1:5500/W15/FinalProject/FinalProject.html";
+  window.location.href = "https://eunyenim.github.io/SMU_DC_231//W15/FinalProject/FinalProject01/FinalProject.html";
 }
 
 // 5초 후에 goToNextPage() 함수를 실행
@@ -47,7 +47,7 @@ window.addEventListener('load', function() {
 });
 
 document.addEventListener('click', function() {
-  window.location.href = 'http://127.0.0.1:5500/W15/FinalProject/FinalProject01/FinalProject.html';
+  window.location.href = 'https://eunyenim.github.io/SMU_DC_231//W15/FinalProject/FinalProject01/FinalProject.html';
 });
 
 

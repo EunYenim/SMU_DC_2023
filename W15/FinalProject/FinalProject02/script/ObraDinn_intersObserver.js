@@ -52,7 +52,7 @@ let nav1 = document.getElementById("nav1");
 nav1.onclick = () => {
   setTimeout(() => {
     // 3초 후에 다른 페이지로 이동
-    window.location.href = "http://127.0.0.1:5500/W15/FinalProject/FinalProject01/FinalProject.html";
+    window.location.href = "https://eunyenim.github.io/SMU_DC_231//W15/FinalProject/FinalProject01/FinalProject.html";
   }, 2000); // 3초 (3000밀리초) 설정
 };
 
@@ -61,7 +61,7 @@ let nav2 = document.getElementById("nav2");
 nav2.onclick = () => {
   setTimeout(() => {
     // 3초 후에 다른 페이지로 이동
-    window.location.href = "http://127.0.0.1:5500/W15/FinalProject/FinalProject02/FinalProject02.html";
+    window.location.href = "https://eunyenim.github.io/SMU_DC_231//W15/FinalProject/FinalProject02/FinalProject02.html";
   }, 2000); // 3초 (3000밀리초) 설정
 };
 
@@ -70,6 +70,6 @@ let nav3 = document.getElementById("nav3");
 nav3.onclick = () => {
   setTimeout(() => {
     // 3초 후에 다른 페이지로 이동
-    window.location.href = "http://127.0.0.1:5500/W15/FinalProject/FinalProject03/FinalProject03.html";
+    window.location.href = "https://eunyenim.github.io/SMU_DC_231//W15/FinalProject/FinalProject03/FinalProject03.html";
   }, 2000); // 3초 (3000밀리초) 설정
 };
