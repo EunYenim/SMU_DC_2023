@@ -41,7 +41,7 @@ button.onclick = () => {
   animTarget2.classList.toggle("triggered2");
   setTimeout(() => {
     // 3초 후에 다른 페이지로 이동
-    window.location.href = "https://eunyenim.github.io/SMU_DC_231//W15/FinalProject/FinalProject01/FinalProject.html";
+    window.location.href = "https://eunyenim.github.io/SMU_DC_231//W15/FinalProject/FinalProject02/FinalProject02.html";
   }, 3000); // 3초 (3000밀리초) 설정
 };
 
