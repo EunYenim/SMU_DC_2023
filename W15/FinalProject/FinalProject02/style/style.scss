@@ -24,7 +24,7 @@ overflow-x: hidden;
 }
 
 html {
- 
+  color: white;
   scroll-behavior: smooth;
 }
 
@@ -78,7 +78,7 @@ nav {
     0 0.0625rem 0.1875rem 0.0625rem rgb(0 0 0 / 30%);
 
   li {
-    color: $onSurface-light;
+    color: white;
 
     &::before {
       border-color: $onSurface-light;
