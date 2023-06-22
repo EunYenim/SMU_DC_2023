@@ -72,6 +72,36 @@ nav {
   background: $surface-opacity-light;
   box-shadow: 0 0.0625rem 0.125rem rgba(18, 18, 18, 0.3),
     0 0.0625rem 0.1875rem 0.0625rem rgb(0 0 0 / 30%);
+    @media screen and (max-width : 1024px){
+      li{
+        font-size: 1.25rem;
+      }
+    }
+    
+      @media screen and (max-width : 1280px){
+        li{
+          font-size: 1.25rem;
+        }
+    }
+    
+    
+    @media screen and (max-width : 1000px){
+      li{
+        font-size: 1.25rem;
+      }
+    }
+    
+    @media screen and (max-width : 850px){
+      li{
+        font-size: 1.125rem;
+      }
+    }
+    
+    @media screen and (max-width : 425px){
+      li{
+        font-size: .6875rem;
+      }
+    }
 
   li {
     color: white;
@@ -130,6 +160,133 @@ header{
   height: $page-height;
 }
 
+p{
+  line-height: 1.5;
+}
+
+@media screen and (max-width : 850px){
+ #section0{
+  div{
+    line-height: 1.2;
+  }
+ }
+}
+
+//text1
+.text {
+  font-family: Song Myung;
+  font-size: 4.375rem;
+  color: white;
+  overflow-wrap: break-word
+}
+@media screen and (max-width : 1024px){
+  .text{
+    font-size: 3.125rem;
+  }
+}
+
+  @media screen and (max-width : 1280px){
+    .text{
+      font-size: 3.125rem;
+    }
+}
+
+
+@media screen and (max-width : 1000px){
+  .text{
+    font-size: 3.125rem;
+  }
+}
+
+@media screen and (max-width : 850px){
+  .text{
+    font-size: 1.5625rem;
+  }
+}
+
+@media screen and (max-width : 425px){
+  .text{
+    font-size: 1.125rem;
+  }
+}
+
+//text2
+.contents{
+  font-family: Nanum Myeongjo;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: white;
+}
+
+@media screen and (max-width : 1024px){
+  .contents{
+    font-size: 1.125rem;
+  }
+}
+
+  @media screen and (max-width : 1280px){
+    .contents{
+      font-size: 1.125rem;
+    }
+}
+
+
+@media screen and (max-width : 1000px){
+  .contents{
+    font-size: .9375rem;
+  }
+}
+
+@media screen and (max-width : 850px){
+  .contents{
+    font-size: .9375rem;
+  }
+}
+
+@media screen and (max-width : 425px){
+  .contents{
+    font-size: .6875rem ;
+  }
+}
+
+//titile 
+.title1{
+  font-family:Song Myung;
+  font-size: 5rem;
+  color: white;
+}
+
+@media screen and (max-width : 1024px){
+  .title1{
+    font-size: 3.75rem;
+  }
+}
+
+  @media screen and (max-width : 1280px){
+    .title1{
+      font-size: 4.375rem;
+    }
+}
+
+
+@media screen and (max-width : 1000px){
+  .title1{
+    font-size: 3.125rem;
+  }
+}
+
+@media screen and (max-width : 850px){
+  .title1{
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width : 425px){
+  .title1{
+    font-size: 1.5625rem;
+  }
+}
+
 // 첫번째 text animation
 
 #section0::before{
@@ -168,12 +325,6 @@ header{
     }
   }
 
-.text{
-  font-family: Song Myung;
-  font-size: 5rem;
-  color: white;
-  overflow-wrap: break-word
-}
 
 #section0{
   margin-inline: 1.875rem;
@@ -182,26 +333,6 @@ header{
   justify-content: center;
   align-items: center;
   //background-color: black;
-}
-
-  @media screen and (max-width : 1024px){
-    .text{
-      font-size: 3.4375rem;
-      font-family: Song Myung;
-    }
-  }
-
-  @media screen and (max-width : 1280px){
-    .text{
-      font-size: 3.3125rem;
-      font-family: Song Myung;
-    }
-    @media screen and (max-width : 1280px){
-      .text{
-        font-size: 3.3125rem;
-        font-family: Song Myung;
-      }
-  }
 }
 
   @media screen and (max-width : 1280px){
@@ -218,21 +349,7 @@ header{
      }
   }
 
-  //@media screen and (max-width : 1280px){
-   // header{
-    // height: 80ch
-    // }
-  //}
-
-  @media screen and (max-width : 850px){
-    .text{
-      font-size: 2.5rem;
-      font-family: Song Myung;
-    }
-  }
-
-
-
+// section 0
  .content{
   padding-top: 6.25rem;
   margin-top: 6.25rem;
@@ -298,15 +415,7 @@ div{
   margin-block: 1.875rem;
 }
 
-.title1{
-  font-family:Song Myung;
-  font-size: 6.25rem;
-}
-.contents{
-  font-family: Nanum Myeongjo;
-  font-size: 1.625rem;
-  line-height: 1.6;
-}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -337,22 +446,9 @@ div{
 
 .animTarget img{ // 엥 됐다 img 조절은 여기에서 하기
   background-repeat: no-repeat;
-  max-width: 80%; 
+  max-width: 60%; 
   height: auto;
   size: 10px;
-}
-
-p{
-  line-height: 1.5;
-}
-
-@media screen and (max-width : 1280px){
-  .contents{
-   font-size: 1.25rem;
-  }
-  .title1{
-    font-size: 3.75rem;
-  }
 }
 
 @media screen and (max-width : 1280px){
@@ -361,7 +457,6 @@ p{
     height: auto;
   }
 }
-
 
 //section2
 @keyframes slide-up {
@@ -433,22 +528,13 @@ p{
 
 .animTrigger img{ // 엥 됐다 img 조절은 여기에서 하기
   background-repeat: no-repeat;
-  max-width: 50rem; 
+  max-width: 15.625rem; 
   height: auto;
   margin-bottom: 2.5rem;
 }
 
 p{
   line-height: 1.5;
-}
-
-@media screen and (max-width : 1280px){
-  .contents{
-    font: size 23px;
-  }
-  .title1{
-    font-size: 3.75rem;
-  }
 }
 
 @media screen and (max-width : 1280px){
@@ -539,14 +625,6 @@ p{
   line-height: 1.5;
 }
 
-@media screen and (max-width : 1280px){
-  .contents{
-    font: size 23px;
-  }
-  .title1{
-    font-size: 3.75rem;
-  }
-}
 
 @media screen and (max-width : 1280px){
   .animTarget img{
@@ -612,9 +690,9 @@ p{
 }
 }
 
-.animTarget img{ // 엥 됐다 img 조절은 여기에서 하기
+.animTrigger img{ // 엥 됐다 img 조절은 여기에서 하기
   background-repeat: no-repeat;
-  max-width: 80%; 
+  max-width: 12.5rem; 
   height: auto;
   size: 10px;
 }
@@ -623,14 +701,6 @@ p{
   line-height: 1.5;
 }
 
-@media screen and (max-width : 1280px){
-  .contents{
-    font: size 23px;
-  }
-  .title1{
-    font-size: 3.75rem;
-  }
-}
 
 @media screen and (max-width : 1280px){
   .animTarget img{
@@ -642,21 +712,33 @@ p{
 
 .button{
   font-family: Nanum Myeongjo;
-  font-size: 26px;
+  font-size: 22px;
   line-height: 1.6;
-  border-radius: 40%;
+  border-radius: 60%;
   padding: 10px;
   cursor: pointer;
   transition: background-color 250ms ease-in-out;
 }
+
+@media screen and (max-width : 850px){
+  .button{
+    font-size: 1.125rem;
+  }
+}
+
+@media screen and (max-width : 425px){
+  .button{
+    font-size: .9375rem;
+  }
+}
 .button:hover {
-  background-color: bisque;
+  background-color: rgb(54, 5, 5);
 }
 .button--clicked {
-  background-color: cornflowerblue;
+  background-color: rgb(5, 0, 104);
 }
 .button--clicked :hover {
-  background-color: rgb(60, 92, 210);
+  background-color: rgb(150, 173, 255);
 }
 .clock {
   background-image: url(img/clock.png);
@@ -731,24 +813,15 @@ p{
 }
 }
 
-.animTrigger img{ // 엥 됐다 img 조절은 여기에서 하기
+.animTrigger img{ // 전체 이미지 조절
   background-repeat: no-repeat;
-  max-width: 80%; 
+  max-width: 40%; 
   height: auto;
   size: 10px;
 }
 
 p{
   line-height: 1.5;
-}
-
-@media screen and (max-width : 1280px){
-  .contents{
-    font: size 23px;
-  }
-  .title1{
-    font-size: 3.75rem;
-  }
 }
 
 @media screen and (max-width : 1280px){
@@ -825,13 +898,13 @@ main {
 }
 
 
-// 버튼 프로그래스바 푸터
 
 // 간격
 @media (width <= 62.5rem) {
   .stickyWrap {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto 1fr;
+    justify-content: center;
   }
 
   main {

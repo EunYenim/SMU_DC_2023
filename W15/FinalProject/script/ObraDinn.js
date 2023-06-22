@@ -6,13 +6,13 @@ function goToNextPage() {
 // 5초 후에 goToNextPage() 함수를 실행
 //setTimeout(goToNextPage, 10000); // 5초 (5000ms) 설정
 var backgroundMusic = document.getElementById("backgroundSound");
-backgroundMusic.addEventListener("loadeddata", () => {console.log("loaded"); setTimeout(()=>{
+backgroundMusic.addEventListener("canplaythrough", () => {console.log("loaded"); setTimeout(()=>{
   backgroundMusic.muted = false;
   backgroundMusic.volume = 0.8;
   backgroundMusic.loop = true;
   backgroundMusic.play();
   console.log("B");
-},3000);});
+},3000);}); 
 
 
 let textContainer = document.getElementById('text-container');
